@@ -1,0 +1,51 @@
+h1 {
+
+}
+
+.section {
+	margin: 20px 0;
+}
+
+#statistics .statistic {
+	text-align: center;
+	font-size: 200%;
+	margin: 0;
+}
+
+#statistics #amountRaised {
+	background-color: red;
+}
+
+#statistics #amountDonated {
+	background-color: yellow;
+}
+
+#statistics #numChallengesAccepted {
+	background-color: green;
+}
+
+#statistics #numChallengesPosted {
+	background-color: blue;
+}
+
+#post {
+
+}
+
+#posts .post {
+}
+
+#posts .post .title {
+	background-color: #888;
+	padding: 10px;
+}
+
+#posts .post .body {
+	background-color: #CCC;
+	padding: 10px;
+}
+
+#posts .post .footer {
+	background-color: #999;
+	padding: 10px;
+}
