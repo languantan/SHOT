@@ -64,7 +64,7 @@
                 </div>
                 <a class="mui-btn mui-btn-default marginless" style="width:100%" onclick="uploadFeed(1)">Challenge Accepted!</a>
                 <div class="sub-card-holder">
-                    <div class="sub-card"><video controls=""><source src="blah"></video></div>
+                    <div class="sub-card"><video height="200px" controls=""><source src="{% if video %} /uploads/{{ video['url'] }} {% endif %}"></video></div>
                     <div class="sub-card"><video controls=""><source src="blah"></video></div>
                     <div class="sub-card"><video controls=""><source src="blah"></video></div>
                 </div>

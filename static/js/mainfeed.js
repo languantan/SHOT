@@ -1,28 +1,28 @@
 var feed;
 
 window.onload = function() {
-    index.js//pull data from server
-
+    //pull data from server
+    
 }
 
 function loadFeed() {
     if(feed.length < 1) {
-        index.js//display no feed;
-        index.jsreturn;
-        index.js}
-
-        index.jsfor (var i = 0; i < feed.length; i ++) {
-            index.jsswitch(feed[i]) {
-                index.jscase "challenge":index.js
-                    index.js//display challenge
-                    index.jsbreak;
-                index.jscase "pool":
-                    index.js//display pool
-                    index.jsbreak;
-                index.jsdefault:
-                    index.jsbreak;
-                index.js}index.js
-                    index.js}
+        //display no feed;
+        return;
+    }
+    
+    for (var i = 0; i < feed.length; i ++) {
+        switch(feed[i]) {
+            case "challenge":
+                //display challenge
+                break;
+            case "pool":
+                //display pool
+                break;
+            default:
+                break;
+        }
+    }
 }
 
 function uploadFeed(challengeid) {
@@ -32,13 +32,29 @@ function uploadFeed(challengeid) {
     modalEl.style.height = '80%';
     modalEl.style.margin = '100px auto';
     modalEl.style.backgroundColor = '#fff';
-
+    
+    var form = document.createElement('form');
+    form.action = "/upload/";
+    form.method = "post";
+    form.enctype= "multipart/form-data";
+    
     var input = document.createElement('input');
     input.type = 'file';
     input.id = 'upload';
+    input.name = 'fileToUpload'
     input.style.padding = '40px';
-
-    modalEl.appendChild(input);
+    
+    var submitBtn = document.createElement('input');
+    submitBtn.type = 'submit';
+    submitBtn.id = 'upload';
+    submitBtn.name = "submit";
+    submitBtn.value = "Upload Video";
+    
+    form.appendChild(input);
+    form.appendChild(submitBtn);
+    
+    
+    modalEl.appendChild(form);
     // show modal
     mui.overlay('on', modalEl);
 }
@@ -50,7 +66,7 @@ function showFeed(challengeid) {
     modalEl.style.margin = '100px auto';
     modalEl.style.textAlign = 'center';
     modalEl.style.backgroundColor = '#fff';
-
+    
     var video = document.createElement('video');
     video.style.padding = "10px";
     video.controls = 'enabled';
@@ -58,15 +74,13 @@ function showFeed(challengeid) {
     source.src = "blah";
     video.appendChild(source);
     modalEl.appendChild(video);
-
+    
     var button = document.createElement('a');
     button.className = 'mui-btn mui-btn-default';
     button.style.width = '100%';
     button.text = 'Donate!';
     button.onclick = function() { alert('donated!');};
-
+    
     modalEl.appendChild(button);
     mui.overlay('on', modalEl);
 }
-No newline at end of file
-
