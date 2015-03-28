@@ -4,7 +4,13 @@ $(document).ready(function () {
 	setAmountDonated(100);
 	setNumChallengesAccepted(5);
 	setNumChallengesPosted(10);
+
+	addPost("Sample post", "http://blah.com/", 20);
 });
+
+function setName(value) {
+	$("#name").text(value);
+}
 
 function setAmountRaised(value) {
 	$("#amountRaised").text("Raised $" + value);
@@ -23,5 +29,5 @@ function setNumChallengesPosted(value) {
 }
 
 function addPost(title, url, amtRaised) {
-
+	$("#posts").append("<div class='post'><div class='title'>" + title + "</div><div class='body'><video width='100%' autoplay><source src='" + url + "type='video/mp4'></video></div><div class='footer'>Raised $" + amtRaised +  "!</div></div>");
 }
