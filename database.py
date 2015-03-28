@@ -1,16 +1,32 @@
 import pymongo
 from pymongo import MongoClient
-client = MongoClient()
 
-db = client.test_database
-users = db.test_users
+class db(object):
 
-def add_user(username, email, password):
-    user = { "username" : username,
-	         "email" : email,
-             "password" : password }
-    users.insert(user)
+    client = MongoClient()
+    db = client.database
+    users = db.users
+    videos = db.videos
 
-def get_users():
-    return users.find_one()
-    
+    def add_user(self, username, email, password, imageurl):
+        user = { "username" : username,
+            "email" : email,
+            "password" : password,
+            "imageurl" : imageurl }
+        self.users.insert(user)
+
+    def get_users(self):
+        return self.users.find_one()
+
+    def add_video(self, title, postedby, url, parentvideo):
+        video = { "title" : title,
+            "postedby" : postedby,
+            "url" : url,
+            "parentvideo" : parentvideo,
+            "ver_count" : 0
+        }
+        return self.videos.insert(video)
+
+    def add_verification_count(self, videoid):
+       return self.videos.find_and_modify({"_id":videoid},{"$inc":{"ver_count":1}}, new=True)
+
