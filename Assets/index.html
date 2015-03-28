@@ -1,8 +1,53 @@
 <html>
 <head>
 	<title>SHOT - Sharlotte's Hat of Tricks</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href='css/mui.css' />
+    <script type="text/javascript" src="js/mui.js"></script>	
 </head>
-<body>
 
+<body>
+	<div class='navigationheader' id='index-navigation'>
+	</div>
+	<div id='intro'>
+	</div>
+	<div id='register'>
+		<form>
+			<legend>Register</legend>
+			<div class="mui-form-group">
+				<input type="text" class="mui-form-control">
+				<label class="mui-form-floating-label" id='registerUsername'>Username (That's your pet, here)</label>
+			</div>
+			<div class="mui-form-group">
+				<input type="email" class="mui-form-control">
+				<label class="mui-form-floating-label" id='registerEmail'>Email</label>
+			</div>
+			<div class="mui-form-group">
+				<input type="password" class="mui-form-control">
+				<label class="mui-form-floating-label" id='registerPassword'>Password</label>
+			</div>
+			<div class="mui-form-group">
+				<input type="password" class="mui-form-control">
+				<label class="mui-form-floating-label" id='registerConfirm'>Confirm Password</label>
+			</div>
+			<button type="submit" class="mui-btn mui-btn-default mui-btn-raised" id='btnRegister'>Register</button>
+		</form>
+	</div>
+	<div id='login'>
+		<form>
+			<legend>Login</legend>
+						<div class="mui-form-group">
+				<input type="email" class="mui-form-control">
+				<label class="mui-form-floating-label" id='loginEmail'>Email</label>
+			</div>
+			<div class="mui-form-group">
+				<input type="password" class="mui-form-control">
+				<label class="mui-form-floating-label" id='loginPassword'>Password</label>
+			</div>
+			<button type="submit" class="mui-btn mui-btn-default mui-btn-raised" id='btnLogin'>Login</button>
+		</form>
+	</div>
 </body>
 </html>
