@@ -15,6 +15,9 @@ class db(object):
             "imageurl" : imageurl }
         self.users.insert(user)
 
+    def login_user(self, email, password):
+        return self.users.find({"email":email, "password":password}).count() == 1
+
     def get_users(self):
         return self.users.find_one()
 

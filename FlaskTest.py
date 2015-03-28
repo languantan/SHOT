@@ -37,6 +37,16 @@ class ShotTestCase(unittest.TestCase):
         a = self.dbase.add_user("kitty", "email", "password", "imageurl")
         assert self.users.find({"username":"kitty"}).count() == 1
 
+    def test_login_user(self):
+        a = self.dbase.add_user("kitty", "email", "password", "imageurl")
+        success = self.dbase.login_user("email", "password")
+        assert success is True
+
+    def test_login_user_fail(self):
+        a = self.dbase.add_user("kitty", "email", "password", "imageurl")
+        success = self.dbase.login_user("emaili1", "password")
+        assert success is False
+
 if __name__ == '__main__':
     unittest.main()
         
