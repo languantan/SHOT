@@ -6,10 +6,12 @@ function onClickBtnLogin() {
 }
 
 function onClickBtnRegister() {
-	if(canRegister) {
-		var email = document.getElementById('registerEmail').value.trim();
-		var password = document.getElementById('registerPassword').value;		
-	}
+	// if(canRegister) {
+	// 	var email = document.getElementById('registerEmail').value.trim();
+	// 	var password = document.getElementById('registerPassword').value;		
+	// }
+	console.log('are we here?');
+	window.location.href = "mainfeed.html";
 }
 
 function onChangePassword() {
