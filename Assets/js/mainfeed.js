@@ -41,6 +41,30 @@ function uploadFeed(challengeid) {
     modalEl.appendChild(input);
     // show modal
     mui.overlay('on', modalEl);
+}
 
-    //upload to db
+function showFeed(challengeid) {
+    var modalEl = document.createElement('div');
+    modalEl.style.width = '80%';
+    modalEl.style.height = '80%';
+    modalEl.style.margin = '100px auto';
+    modalEl.style.textAlign = 'center';
+    modalEl.style.backgroundColor = '#fff';
+
+    var video = document.createElement('video');
+    video.style.padding = "10px";
+    video.controls = 'enabled';
+    var source = document.createElement('source');
+    source.src = "blah";
+    video.appendChild(source);
+    modalEl.appendChild(video);
+
+    var button = document.createElement('a');
+    button.className = 'mui-btn mui-btn-default';
+    button.style.width = '100%';
+    button.text = 'Donate!';
+    button.onclick = function() { alert('donated!');};
+
+    modalEl.appendChild(button);
+    mui.overlay('on', modalEl);
 }
