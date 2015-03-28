@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" media="screen" href='css/muistyles.css' />
 	<link rel="stylesheet" type="text/css" media="screen" href='css/style.css' />
 	<script type="text/javascript" src="js/mui.js"></script>	
-	<script type="text/javascript" src="js/index.js"></script>		
+	<script type="text/javascript" src="js/mainfeed.js"></script>		
 </head>
 
 <body>
@@ -24,6 +24,7 @@
 							</td>
 							<td id="appbar-cell-right" class='small-font-size'>
 								<a>Notifications</a>
+								<a>Challenge!</a>
 							</td>
 						</tr>
 					</tbody>
@@ -32,8 +33,34 @@
 		</nav>
 	</header>
 
+	<!-- Filter -->
+<!-- 	<div>
+		<a onclick='toggleChallenge()'>Challenge</a><a onclick='togglePool()'>Pool</a>
+	</div>
+ -->
 	<!-- Main feed -->
-	<section id='mainfeed'>
+	<section id='mainfeed' class="mui-container" style="padding-top:50px;">
+		<!-- <div id='nofeed' style="display:none"> -->
+		<div id='nofeed' class='main-card'>
+			<h4><b>Oops!</b></h4>
+			<p>There are currently no feed available!</p>
+			<p>Please try again later, or check back at a later dates!</p>
+		</div>
+		<br>
+		<div class='main-card'>
+			<h4><b>See my tortoise do backflips!</b></h4>
+			<div class='mugshot'>
+				<video style='width:90%' onclick='alert("boo")' controls>
+					<source src="blah">
+				</video>
+			</div>
+		</div>
+		<div class='sub-card-holder'>
+			<div class='sub-card'><video controls><source src="blah"></video></div>
+			<div class='sub-card'><video controls><source src="blah"></video></div>
+			<div class='sub-card'><video controls><source src="blah"></video></div>
+		</div>
+
 	</section>
 </body>
 </html>
