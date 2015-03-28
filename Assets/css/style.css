@@ -25,6 +25,12 @@ legend {
 	font-size: 18px;
 }
 
+#confirmPasswordErr {
+	font-size: 14px;
+	color:#ccc;
+	padding:15px 0;
+}
+
 /** Background Colors **/
 #login {
 	background-color: white;

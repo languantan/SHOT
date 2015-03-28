@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" media="screen" href='css/muistyles.css' />
 	<link rel="stylesheet" type="text/css" media="screen" href='css/style.css' />
 	<script type="text/javascript" src="js/mui.js"></script>	
+	<script type="text/javascript" src="js/index.js"></script>		
 </head>
 
 <body>
@@ -61,22 +62,24 @@
 			<legend class='legend-header'>Register</legend>
 			<form class="mui-col-md-offset-4 mui-col-md-4">
 				<div class="mui-form-group">
-					<input type="text" class="mui-form-control">
-					<label class="mui-form-floating-label" id='registerUsername'>Username (That's your pet, here)</label>
+					<input id='registerUsername' type="text" class="mui-form-control">
+					<label class="mui-form-floating-label" >Username (That's your pet, here)</label>
 				</div>
 				<div class="mui-form-group">
-					<input type="email" class="mui-form-control">
-					<label class="mui-form-floating-label" id='registerEmail'>Email</label>
+					<input id='registerEmail' type="email" class="mui-form-control">
+					<label class="mui-form-floating-label">Email</label>
 				</div>
 				<div class="mui-form-group">
-					<input type="password" class="mui-form-control">
-					<label class="mui-form-floating-label" id='registerPassword'>Password</label>
+					<input id='registerPassword' type="password" class="mui-form-control" onkeyup="onChangePassword()">
+					<label class="mui-form-floating-label" >Password</label>
 				</div>
 				<div class="mui-form-group">
-					<input type="password" class="mui-form-control">
-					<label class="mui-form-floating-label" id='registerConfirm'>Confirm Password</label>
+					<input id='registerConfirm' type="password" class="mui-form-control" onkeyup="onChangePassword()">
+					<label class="mui-form-floating-label" >Confirm Password</label>
+					<p id='confirmPasswordErr'>
+					</p>
 				</div>
-				<button type="submit" class="mui-btn mui-btn-default mui-btn-raised" id='btnRegister'>Register</button>
+				<button type="submit" class="mui-btn mui-btn-default mui-btn-raised" onclick='onClickBtnRegister()'>Register</button>
 			</form>
 		</div>
 	</section>
@@ -87,14 +90,14 @@
 			<legend>Login</legend>
 			<form class="mui-col-md-offset-4 mui-col-md-4">
 				<div class="mui-form-group">
-					<input type="email" class="mui-form-control">
-					<label class="mui-form-floating-label" id='loginEmail'>Email</label>
+					<input id='loginEmail' type="email" class="mui-form-control">
+					<label class="mui-form-floating-label" >Email</label>
 				</div>
 				<div class="mui-form-group">
-					<input type="password" class="mui-form-control">
-					<label class="mui-form-floating-label" id='loginPassword'>Password</label>
+					<input id='loginPassword' type="password" class="mui-form-control">
+					<label class="mui-form-floating-label" >Password</label>
 				</div>
-				<button type="submit" class="mui-btn mui-btn-default mui-btn-raised" id='btnLogin'>Login</button>
+				<button type="submit" class="mui-btn mui-btn-default mui-btn-raised" id='btnLogin' onclick='onClickBtnLogin()'>Login</button>
 			</form>
 		</div>
 	</section>
