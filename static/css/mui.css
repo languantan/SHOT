@@ -1208,7 +1208,7 @@ hr {
   .mui-btn.mui-text-accent {
     color: rgba(255, 64, 129, 0.87); }
   .mui-btn + .mui-btn {
-    margin-left: 8px; }
+    margin-left: 0px; }
   .mui-btn:hover, .mui-btn:focus, .mui-btn:active, .mui-open > .mui-btn.mui-dropdown-toggle {
     box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.3), 0 2px 3px 0 rgba(0, 0, 0, 0.1);
     color: rgba(0, 0, 0, 0.87); }
