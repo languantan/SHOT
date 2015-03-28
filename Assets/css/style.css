@@ -44,6 +44,9 @@
 .marginless {
 	margin: 0;
 }
+.paddingless {
+	padding: 0;
+}
 
 legend {
 	font-size: 18px;
