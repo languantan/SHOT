@@ -1,0 +1,135 @@
+<html>
+<head>
+	<title>SHOT - Sharlotte's Hat of Tricks</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href='css/mui.css' />
+	<link rel="stylesheet" type="text/css" media="screen" href='css/muistyles.css' />
+	<link rel="stylesheet" type="text/css" media="screen" href='css/style.css' />
+	<script type="text/javascript" src="js/mui.js"></script>	
+	<script type="text/javascript" src="js/index.js"></script>		
+</head>
+
+<body>
+	<header class='navheader'>
+		<nav class="mui-appbar" role="navigation">
+			<div class="mui-container">
+				<table id="appbar-inner">
+					<tbody>
+						<tr class="mui-appbar-height">
+							<td>
+								<a id="appbar-sidenav-toggle"><i class="icon-menu"></i></a>
+								<a class="appbar-brand" href="">SHOT</a>
+							</td>
+							<td id="appbar-cell-right" class='small-font-size'>
+								<a href="#register" class="mui-hidden-xs">Register</a>
+								<a href="#login" class="mui-hidden-xs">Login</a>
+								<a href="#aboutUs" class="mui-hidden-xs">About Us</a>   
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</nav>
+	</header>
+	<!-- Introduction -->
+	<section id='intro'>
+		<div class="mui-container mui luxurious-spacing">
+			<legend>Sharlotte's Hat of Tricks</legend>
+			<div class='mugshot'>
+				<img src='images/lg.jpg' style='max-width:250px'/>
+			</div>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar lorem sollicitudin, pellentesque nisl eget, condimentum libero. Aenean imperdiet consequat mi, eget auctor mauris semper sed. Pellentesque egestas magna in justo posuere volutpat. Cras luctus lacus a nunc feugiat, mattis tempus enim congue. Nunc pulvinar efficitur nibh, nec ornare dui facilisis at. Fusce lobortis faucibus ultrices. Maecenas in ipsum a ligula sagittis malesuada vel a velit. Donec erat odio, dapibus ut felis ut, dictum pellentesque ante. Ut vulputate sed eros sit amet rhoncus. Phasellus id fringilla odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean ut nulla id tortor tristique sagittis.
+			</p>
+			<p>
+				Sed vel volutpat augue. Donec lacinia purus in orci dapibus condimentum. Fusce sem velit, porta sed felis sed, vestibulum efficitur sem. In diam massa, tristique sed pretium tristique, blandit sit amet lectus. Sed diam tortor, sagittis ut imperdiet tincidunt, hendrerit in nunc. Ut sapien arcu, ultricies elementum tincidunt sodales, ornare sed dui. Cras non malesuada risus. Fusce eu fermentum dui, at sagittis lectus. In nec eros et augue cursus sollicitudin. Integer eget ex suscipit, pellentesque nisl a, pulvinar dui. Quisque ut consequat ante. Nam eu justo justo. Phasellus at tortor tincidunt, tincidunt justo at, laoreet nunc. In at lorem non neque hendrerit posuere vitae id lorem.
+			</p>			
+			<div class='mugshot'>
+
+				<a class="mui-btn mui-btn-default mui-btn-raised" href='#register'>Register now!</a>
+				<p>
+					<a href='#login'>Or click here to login to your account</a>
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Registration -->
+	<section id='register'>
+		<div class="mui-container mui luxurious-spacing">
+			<legend class='legend-header'>Register</legend>
+			<form class="mui-col-md-offset-4 mui-col-md-4">
+				<div class="mui-form-group">
+					<input id='registerUsername' type="text" class="mui-form-control">
+					<label class="mui-form-floating-label" >Username (That's your pet, here)</label>
+				</div>
+				<div class="mui-form-group">
+					<input id='registerEmail' type="email" class="mui-form-control">
+					<label class="mui-form-floating-label">Email</label>
+				</div>
+				<div class="mui-form-group">
+					<input id='registerPassword' type="password" class="mui-form-control" onkeyup="onChangePassword()">
+					<label class="mui-form-floating-label" >Password</label>
+				</div>
+				<div class="mui-form-group">
+					<input id='registerConfirm' type="password" class="mui-form-control" onkeyup="onChangePassword()">
+					<label class="mui-form-floating-label" >Confirm Password</label>
+					<p id='confirmPasswordErr'>
+					</p>
+				</div>
+				<a class="mui-btn mui-btn-default mui-btn-raised" onclick='onClickBtnRegister()'>Register</a>
+			</form>
+		</div>
+	</section>
+
+	<!-- Login -->
+	<section id='login'>
+		<div class="mui-container luxurious-spacing">
+			<legend>Login</legend>
+			<form class="mui-col-md-offset-4 mui-col-md-4">
+				<div class="mui-form-group">
+					<input id='loginEmail' type="email" class="mui-form-control">
+					<label class="mui-form-floating-label" >Email</label>
+				</div>
+				<div class="mui-form-group">
+					<input id='loginPassword' type="password" class="mui-form-control">
+					<label class="mui-form-floating-label" >Password</label>
+				</div>
+				<a class="mui-btn mui-btn-default mui-btn-raised" onclick='onClickBtnLogin()'>Login</a>
+			</form>
+		</div>
+	</section>
+
+	<!-- About Us -->
+	<section id='aboutUs'>
+		<div class="mui-container luxurious-spacing">
+			<legend style='color:white'>About Us</legend>
+			<div>
+				<div id='lg' class='mui-col-sm-4 mui-col-md-4 mugshot'>
+					<img style='max-width:150px;' src='images/lg.jpg'>
+					<h4 style='color:#aaa;'>Ryan</h4>
+					<p style='color:#555'>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar lorem sollicitudin, pellentesque nisl eget, condimentum libero. Aenean imperdiet consequat mi, eget auctor mauris semper sed. Pellentesque egestas magna in justo posuere volutpat. Cras luctus lacus a nunc feugiat, mattis tempus enim congue. Nunc pulvinar efficitur nibh, nec ornare dui facilisis at. Fusce lobortis faucibus ultrices. Maecenas in ipsum a ligula sagittis malesuada vel a velit. Donec erat odio, dapibus ut felis ut, dictum pellentesque ante. Ut vulputate sed eros sit amet rhoncus. Phasellus id fringilla odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean ut nulla id tortor tristique sagittis.
+					</p>
+				</div>
+				<div id='jasm' class='mui-col-sm-4 mui-col-md-4 mugshot'>
+					<img style='max-width:150px;' src='images/lg.jpg'>
+					<h4 style='color:#aaa;'>Jasmine</h4>
+					<p style='color:#555'>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar lorem sollicitudin, pellentesque nisl eget, condimentum libero. Aenean imperdiet consequat mi, eget auctor mauris semper sed. Pellentesque egestas magna in justo posuere volutpat. Cras luctus lacus a nunc feugiat, mattis tempus enim congue. Nunc pulvinar efficitur nibh, nec ornare dui facilisis at. Fusce lobortis faucibus ultrices. Maecenas in ipsum a ligula sagittis malesuada vel a velit. Donec erat odio, dapibus ut felis ut, dictum pellentesque ante. Ut vulputate sed eros sit amet rhoncus. Phasellus id fringilla odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean ut nulla id tortor tristique sagittis.
+					</p>
+				</div>
+				<div id='frena' class='mui-col-sm-4 mui-col-md-4 mugshot'>
+					<img style='max-width:150px;' src='images/lg.jpg'>
+					<h4 style='color:#aaa;'>miche</h4>
+					<p style='color:#555'>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar lorem sollicitudin, pellentesque nisl eget, condimentum libero. Aenean imperdiet consequat mi, eget auctor mauris semper sed. Pellentesque egestas magna in justo posuere volutpat. Cras luctus lacus a nunc feugiat, mattis tempus enim congue. Nunc pulvinar efficitur nibh, nec ornare dui facilisis at. Fusce lobortis faucibus ultrices. Maecenas in ipsum a ligula sagittis malesuada vel a velit. Donec erat odio, dapibus ut felis ut, dictum pellentesque ante. Ut vulputate sed eros sit amet rhoncus. Phasellus id fringilla odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean ut nulla id tortor tristique sagittis.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
