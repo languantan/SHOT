@@ -1,0 +1,80 @@
+<html>
+<head>
+	<title>SHOT - Sharlotte's Hat of Tricks</title>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/profile.css') }}" />
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/mui.min.css') }}">
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/mui.css') }}">
+	<script async="" src="{{ url_for('static', filename='js/mui.min.js') }}"></script>
+	<script async="" src="{{ url_for('static', filename='js/mui.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery-1.11.2.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery-migrate-1.2.1.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/profile.js') }}"></script>
+</head>
+
+<body>
+<!--{% if userid %}
+  	<h1>Hello {{ userid }}!</h1>
+  	{% endif %}-->
+
+  	<nav class="mui-appbar" role="navigation">
+		<div class="mui-container">
+			<table id="appbar-inner">
+				<tbody>
+					<tr class="mui-appbar-height">
+						<td>
+							<a id="appbar-sidenav-toggle"><i class="icon-menu"></i></a>
+							<a class="appbar-brand" href="/">SHOT</a>
+						</td>
+						<td id="appbar-cell-right" class='small-font-size'>
+							<a href="/feedback" class="mui-hidden-xs">About Us</a>   
+							<a href="/docs/v1/getting-started/introduction" class="mui-hidden-xs">Register</a>
+							<a href="/support" class="mui-hidden-xs">Login</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</nav>
+
+	<div class="mui-container-fluid">
+		<div id="profile" class="section">
+			<div class="mui-row">
+				<div class="mui-col-xs-4">
+					<img width="100%" src="http://i.huffpost.com/gen/964776/images/o-CATS-KILL-BILLIONS-facebook.jpg"/>
+				</div>
+
+				<div class="mui-col-xs-8">
+					<h1>Charlotte</h1>
+					<p>21 October 2012</p>
+				</div>
+			</div>
+  		</div>
+		<div id="statistics" class="section">
+				<div class="mui-row">
+					<div id="amountRaised" class="mui-col-xs-6 statistic">10</div>
+					<div id="amountDonated" class="mui-col-xs-6 statistic">10</div>
+				</div>
+				<div class="mui-row">
+					<div id="numChallengesAccepted" class="mui-col-xs-6 statistic">16</div>
+					<div id="numChallengesPosted" class="mui-col-xs-6 statistic">18</div>
+				</div>
+		</div>
+		<div id="posts" class="section">
+			<div class="post">
+				<div class="title">
+					Watch my cat do back-flips!
+				</div>
+				<div class="body">
+					video
+				<div>
+				<div class="footer">
+					Raised $20!
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
