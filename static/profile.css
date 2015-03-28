@@ -1,7 +1,3 @@
-h1 {
-
-}
-
 .section {
 	margin: 20px 0;
 }
@@ -26,13 +22,6 @@ h1 {
 
 #statistics #numChallengesPosted {
 	background-color: blue;
-}
-
-#post {
-
-}
-
-#posts .post {
 }
 
 #posts .post .title {
