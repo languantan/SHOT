@@ -11,67 +11,122 @@
 </head>
 
 <body>
-	<nav class="mui-appbar" role="navigation">
-		<div class="mui-container">
-			<table id="appbar-inner">
-				<tbody>
-					<tr class="mui-appbar-height">
-						<td>
-							<a id="appbar-sidenav-toggle"><i class="icon-menu"></i></a>
-							<a class="appbar-brand" href="/">SHOT</a>
-						</td>
-						<td id="appbar-cell-right" class='small-font-size'>
-							<a href="/feedback" class="mui-hidden-xs">About Us</a>   
-							<a href="/docs/v1/getting-started/introduction" class="mui-hidden-xs">Register</a>
-							<a href="/support" class="mui-hidden-xs">Login</a>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	</nav>
+	<header class='navheader'>
+		<nav class="mui-appbar" role="navigation">
+			<div class="mui-container">
+				<table id="appbar-inner">
+					<tbody>
+						<tr class="mui-appbar-height">
+							<td>
+								<a id="appbar-sidenav-toggle"><i class="icon-menu"></i></a>
+								<a class="appbar-brand" href="">SHOT</a>
+							</td>
+							<td id="appbar-cell-right" class='small-font-size'>
+								<a href="#register" class="mui-hidden-xs">Register</a>
+								<a href="#login" class="mui-hidden-xs">Login</a>
+								<a href="#aboutUs" class="mui-hidden-xs">About Us</a>   
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</nav>
+	</header>
 	<!-- Introduction -->
-	<div id='intro'>
-	</div>
-	
+	<section id='intro'>
+		<div class="mui-container mui luxurious-spacing">
+			<legend>Sharlotte's Hat of Tricks</legend>
+			<div class='mugshot'>
+				<img src='images/lg.jpg' style='max-width:250px'/>
+			</div>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar lorem sollicitudin, pellentesque nisl eget, condimentum libero. Aenean imperdiet consequat mi, eget auctor mauris semper sed. Pellentesque egestas magna in justo posuere volutpat. Cras luctus lacus a nunc feugiat, mattis tempus enim congue. Nunc pulvinar efficitur nibh, nec ornare dui facilisis at. Fusce lobortis faucibus ultrices. Maecenas in ipsum a ligula sagittis malesuada vel a velit. Donec erat odio, dapibus ut felis ut, dictum pellentesque ante. Ut vulputate sed eros sit amet rhoncus. Phasellus id fringilla odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean ut nulla id tortor tristique sagittis.
+			</p>
+			<p>
+				Sed vel volutpat augue. Donec lacinia purus in orci dapibus condimentum. Fusce sem velit, porta sed felis sed, vestibulum efficitur sem. In diam massa, tristique sed pretium tristique, blandit sit amet lectus. Sed diam tortor, sagittis ut imperdiet tincidunt, hendrerit in nunc. Ut sapien arcu, ultricies elementum tincidunt sodales, ornare sed dui. Cras non malesuada risus. Fusce eu fermentum dui, at sagittis lectus. In nec eros et augue cursus sollicitudin. Integer eget ex suscipit, pellentesque nisl a, pulvinar dui. Quisque ut consequat ante. Nam eu justo justo. Phasellus at tortor tincidunt, tincidunt justo at, laoreet nunc. In at lorem non neque hendrerit posuere vitae id lorem.
+			</p>			
+			<div class='mugshot'>
+
+				<a class="mui-btn mui-btn-default mui-btn-raised" href='#register'>Register now!</a>
+				<p>
+					<a href='#login'>Or click here to login to your account</a>
+				</p>
+			</div>
+		</div>
+	</section>
+
 	<!-- Registration -->
-	<div id='register' class="mui-container mui">
-		<form class="mui-col-md-offset-4 mui-col-md-4">
-			<legend>Register</legend>
-			<div class="mui-form-group">
-				<input type="text" class="mui-form-control">
-				<label class="mui-form-floating-label" id='registerUsername'>Username (That's your pet, here)</label>
-			</div>
-			<div class="mui-form-group">
-				<input type="email" class="mui-form-control">
-				<label class="mui-form-floating-label" id='registerEmail'>Email</label>
-			</div>
-			<div class="mui-form-group">
-				<input type="password" class="mui-form-control">
-				<label class="mui-form-floating-label" id='registerPassword'>Password</label>
-			</div>
-			<div class="mui-form-group">
-				<input type="password" class="mui-form-control">
-				<label class="mui-form-floating-label" id='registerConfirm'>Confirm Password</label>
-			</div>
-			<button type="submit" class="mui-btn mui-btn-default mui-btn-raised" id='btnRegister'>Register</button>
-		</form>
-	</div>
+	<section id='register'>
+		<div class="mui-container mui luxurious-spacing">
+			<legend class='legend-header'>Register</legend>
+			<form class="mui-col-md-offset-4 mui-col-md-4">
+				<div class="mui-form-group">
+					<input type="text" class="mui-form-control">
+					<label class="mui-form-floating-label" id='registerUsername'>Username (That's your pet, here)</label>
+				</div>
+				<div class="mui-form-group">
+					<input type="email" class="mui-form-control">
+					<label class="mui-form-floating-label" id='registerEmail'>Email</label>
+				</div>
+				<div class="mui-form-group">
+					<input type="password" class="mui-form-control">
+					<label class="mui-form-floating-label" id='registerPassword'>Password</label>
+				</div>
+				<div class="mui-form-group">
+					<input type="password" class="mui-form-control">
+					<label class="mui-form-floating-label" id='registerConfirm'>Confirm Password</label>
+				</div>
+				<button type="submit" class="mui-btn mui-btn-default mui-btn-raised" id='btnRegister'>Register</button>
+			</form>
+		</div>
+	</section>
 
 	<!-- Login -->
-	<div id='login' class="mui-container">
-		<form class="mui-col-md-offset-4 mui-col-md-4">
+	<section id='login'>
+		<div class="mui-container luxurious-spacing">
 			<legend>Login</legend>
-			<div class="mui-form-group">
-				<input type="email" class="mui-form-control">
-				<label class="mui-form-floating-label" id='loginEmail'>Email</label>
+			<form class="mui-col-md-offset-4 mui-col-md-4">
+				<div class="mui-form-group">
+					<input type="email" class="mui-form-control">
+					<label class="mui-form-floating-label" id='loginEmail'>Email</label>
+				</div>
+				<div class="mui-form-group">
+					<input type="password" class="mui-form-control">
+					<label class="mui-form-floating-label" id='loginPassword'>Password</label>
+				</div>
+				<button type="submit" class="mui-btn mui-btn-default mui-btn-raised" id='btnLogin'>Login</button>
+			</form>
+		</div>
+	</section>
+
+	<!-- About Us -->
+	<section id='aboutUs'>
+		<div class="mui-container luxurious-spacing">
+			<legend style='color:white'>About Us</legend>
+			<div>
+				<div id='lg' class='mui-col-sm-4 mui-col-md-4 mugshot'>
+					<img style='max-width:150px;' src='images/lg.jpg'>
+					<h4 style='color:#aaa;'>Ryan</h4>
+					<p style='color:#555'>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar lorem sollicitudin, pellentesque nisl eget, condimentum libero. Aenean imperdiet consequat mi, eget auctor mauris semper sed. Pellentesque egestas magna in justo posuere volutpat. Cras luctus lacus a nunc feugiat, mattis tempus enim congue. Nunc pulvinar efficitur nibh, nec ornare dui facilisis at. Fusce lobortis faucibus ultrices. Maecenas in ipsum a ligula sagittis malesuada vel a velit. Donec erat odio, dapibus ut felis ut, dictum pellentesque ante. Ut vulputate sed eros sit amet rhoncus. Phasellus id fringilla odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean ut nulla id tortor tristique sagittis.
+					</p>
+				</div>
+				<div id='jasm' class='mui-col-sm-4 mui-col-md-4 mugshot'>
+					<img style='max-width:150px;' src='images/lg.jpg'>
+					<h4 style='color:#aaa;'>Jasmine</h4>
+					<p style='color:#555'>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar lorem sollicitudin, pellentesque nisl eget, condimentum libero. Aenean imperdiet consequat mi, eget auctor mauris semper sed. Pellentesque egestas magna in justo posuere volutpat. Cras luctus lacus a nunc feugiat, mattis tempus enim congue. Nunc pulvinar efficitur nibh, nec ornare dui facilisis at. Fusce lobortis faucibus ultrices. Maecenas in ipsum a ligula sagittis malesuada vel a velit. Donec erat odio, dapibus ut felis ut, dictum pellentesque ante. Ut vulputate sed eros sit amet rhoncus. Phasellus id fringilla odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean ut nulla id tortor tristique sagittis.
+					</p>
+				</div>
+				<div id='frena' class='mui-col-sm-4 mui-col-md-4 mugshot'>
+					<img style='max-width:150px;' src='images/lg.jpg'>
+					<h4 style='color:#aaa;'>miche</h4>
+					<p style='color:#555'>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar lorem sollicitudin, pellentesque nisl eget, condimentum libero. Aenean imperdiet consequat mi, eget auctor mauris semper sed. Pellentesque egestas magna in justo posuere volutpat. Cras luctus lacus a nunc feugiat, mattis tempus enim congue. Nunc pulvinar efficitur nibh, nec ornare dui facilisis at. Fusce lobortis faucibus ultrices. Maecenas in ipsum a ligula sagittis malesuada vel a velit. Donec erat odio, dapibus ut felis ut, dictum pellentesque ante. Ut vulputate sed eros sit amet rhoncus. Phasellus id fringilla odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean ut nulla id tortor tristique sagittis.
+					</p>
+				</div>
 			</div>
-			<div class="mui-form-group">
-				<input type="password" class="mui-form-control">
-				<label class="mui-form-floating-label" id='loginPassword'>Password</label>
-			</div>
-			<button type="submit" class="mui-btn mui-btn-default mui-btn-raised" id='btnLogin'>Login</button>
-		</form>
-	</div>
+		</div>
+	</section>
 </body>
 </html>
