@@ -1,29 +1,25 @@
 $(document).ready(function () {
 	setName("Charlotte");
-	setAmountRaised("Raised $500k");
-	setAmountDonated("Donated $100");
-	setNumChallengesAccepted("Accepted 5 challenges");
-	setNumChallengesPosted("Posted 10 challenges");
-}
-
-function setName(value) {
-	$("#name").text(value);
-}
+	setAmountRaised(500);
+	setAmountDonated(100);
+	setNumChallengesAccepted(5);
+	setNumChallengesPosted(10);
+});
 
 function setAmountRaised(value) {
-	$("#amountRaised").text(value);
+	$("#amountRaised").text("Raised $" + value);
 }
 
 function setAmountDonated(value) {
-	$("#amountDonated").text(value);
+	$("#amountDonated").text("Donated $" + value);
 }
 
 function setNumChallengesAccepted(value) {
-	$("#numChallengesAccepted").text(value);
+	$("#numChallengesAccepted").text("Accepted " + value + " challenges");
 }
 
 function setNumChallengesPosted(value) {
-	$("#numChallengesPosted").text(value);
+	$("#numChallengesPosted").text("Posted " + value + " challenges");
 }
 
 function addPost(title, url, amtRaised) {
