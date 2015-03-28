@@ -21,6 +21,33 @@
 	text-align: center;
 }
 
+.main-card {
+	background-color: #ddd;
+	padding:5px 10px;
+}
+
+.sub-card {
+	display: inline-block;
+}
+
+.sub-card-holder {
+	white-space: nowrap;
+	background-color: #ccc;
+	padding:10px;
+	overflow: auto;
+}
+
+.totheright {
+	text-align: right;
+}
+
+.marginless {
+	margin: 0;
+}
+.paddingless {
+	padding: 0;
+}
+
 legend {
 	font-size: 18px;
 }
