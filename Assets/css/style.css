@@ -37,6 +37,10 @@
 	overflow: auto;
 }
 
+.totheright {
+	text-align: right;
+}
+
 legend {
 	font-size: 18px;
 }
